@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nsgomez</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="4gZRPo3EmtbEC2m3K1OLPNPqo9XyLteFf4ccScY6TEY" />
+
+        <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css' />
+        <style type="text/css">
+            * { box-sizing: border-box; }
+            h1, h2, h3 { margin: 0; }
+            .left { text-align: left; }
+            .center { text-align: center; margin: auto; }
+            .content {
+                font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
+                padding: 10px;
+                display: inline-block;
+            }
+            #header { border-bottom: 1px solid #000; }
+            #header h1 {
+                font-size: 3em;
+                margin: 0;
+            }
+            #content-container { width: 100%; max-width: 40em; }
+            #header a { text-decoration: none; }
+            .project {
+                border: 1px solid #000;
+                padding: 10px;
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="top"></a>
+        <div id="header-container" class="center">
+            <div id="header" class="content center">
+                <h1>Nelson Gomez</h1>
+                <span id="header-links">
+                <a href="https://github.com/nsgomez">GitHub</a> | 
+                <a href="resume.pdf">Resume</a> | 
+                <a href="https://pgp.mit.edu/pks/lookup?op=get&amp;search=0xB5776ED0D5171980">PGP Public Key</a> | 
+                <a href="mailto:nelson.gomez@columbia.edu">Email</a>
+                </span>
+            </div>
+        </div>
+
+        <div id="content-container" class="center">
+            <div id="content" class="content left">
+                <h2>Who I Am</h2>
+                <ul>
+                    <li>First-generation Dominican-American</li>
+                    <li>Columbia University Class of 2019 in SEAS
+                        <ul>
+                            <li>Pursuing a B.S. in computer science</li>
+                        </ul>
+                    </li>
+                    <li>Teaching assistant at Columbia University</li>
+                    <li>Summer intern at Microsoft</li>
+                </ul>
+
+                <h2>What I've Done</h2>
+                <div class="project" id="gzcom">
+                    <h2><a href="https://github.com/nsgomez/gzcom-dll">gzcom-dll</a></h2>
+                    <em>June 2012&ndash;present</em><br />
+
+                    <strong>Technologies Used:</strong> C, C++, Python
+                    <ul>
+                        <li>Obtained reference code for parts of the game's COM framework to reverse engineer</li>
+                        <li>Created a partial framework from the reference to create a working hardcoded module</li>
+                        <li>Documented various structures and classes in the game for potential developers</li>
+                    </ul>
+                </div>
+
+                <div class="project" id="sc4fix">
+                    <h2><a href="https://github.com/nsgomez/sc4fix">SC4Fix</a></h2>
+                    <em>December 2015; January 2018</em><br />
+
+                    <strong>Technologies Used:</strong> C, C++, x86 Assembly
+                    <ul>
+                        <li>Used Ollydbg to debug a reproducible null dereference crash in the game SimCity 4</li>
+                        <li>Resolved a serialization bug that could cause savegame corruption</li>
+                    </ul>
+                </div>
+                
+                <div class="project" id="tincam">
+                    <h2><a href="http://devpost.com/software/tincam">TinCam</a></h2>
+                    <em>April 2016</em><br />
+
+                    <strong>Technologies Used:</strong> Python, Raspberry Pi, Dropbox API
+                    <ul>
+                        <li>Best Hardware Hack at <a href="http://hackny.org">HackNY</a>'s Spring 2016 hackathon</li>
+                        <li>Created a threaded Python program for capturing picture streams and video</li>
+                        <li>Configured a Pi A+ to roam open Wi-Fi networks to be able to upload most of the time</li>
+                        <li>Experimental Twitch streaming implemented for kicks</li>
+                    </ul>
+                    
+                    Collaborative project with <a href="https://github.com/roytenberg">Ben Roytenberg</a>, Claire Wang and Patrick Wu.
+                </div>
+                
+                <div class="project" id="vboxmanager">
+                    <h2><a href="https://github.com/nsgomez/vboxmanager">VBoxManager</a></h2>
+                    <em>February 2016</em><br />
+
+                    <strong>Technologies Used:</strong> Python, Flask, SQLite (via Peewee ORM), VirtualBox CLI
+                    <ul>
+                        <li>Created reference images of OEM copies of Windows 2000 and XP</li>
+                        <li>Used Python 2.x and avast! antivirus on images to track when a machine is infected</li>
+                        <li>Used shared folders to automatically execute malware samples and model infections</li>
+                        <li>Flask frontend created on host to display state of machines and infections</li>
+                    </ul>
+                </div>
+
+                <div class="project" id="chord">
+                    <h2><a href="https://github.com/nsgomez/chord">Chord</a></h2>
+                    <em>February 2015&ndash;September 2015</em><br />
+
+                    <strong>Technologies Used:</strong> Android, Java, TCP networking, Spotify API
+                    <ul>
+                        <li>Users could vote on songs to play (or not) in a "party" using this platform</li>
+                        <li>Network Service Discovery was used for discovering servers on a common network</li>
+                        <li>Used the <a href="https://github.com/EsotericSoftware/kryonet">Kryonet</a> library to
+                        (de)serialize packets between server and client</li>
+                        <li>Spotify API was used for streaming media, but requires a premium account as a result</li>
+                    </ul>
+                </div>
+
+                <div class="project" id="requesttracker">
+                    <h2><a href="https://github.com/nsgomez/RequestTracker">RequestTracker</a></h2>
+                    <em>December 2014</em><br />
+
+                    <strong>Technologies Used:</strong> Python, Pygal graphing
+                    <ul>
+                        <li>Used <tt>requests</tt> library to make and time HTTP requests</li>
+                        <li>Allows a user to see the response time of a site over time without admin access to server</li>
+                        <li>Outputs each result to a CSV and constructs a line graph at the end</li>
+                    </ul>
+                </div>
+
+                <div class="project" id="amplify">
+                    <h2><a href="http://devpost.com/software/music-map-thing-android">Amplify</a></h2>
+                    <em>May 2014</em><br />
+
+                    <strong>Technologies Used:</strong> Android, Java, MongoDB, Node.js, Sails.js, Spotify API
+                    <ul>
+                        <li>Listens to broadcasted Android intents for songs being played</li>
+                        <li>When a song is played, broadcasts GPS coordinates and song to a central server</li>
+                        <li>Server uses Spotify search API to verify proper song title if possible</li>
+                        <li>Users can also see other geotagged listens near them on a map</li>
+                    </ul>
+
+                    <em>Note</em>: I was mostly involved with the Android client. The server, which was written
+                    in Node.js, was almost entirely written by <a href="https://github.com/irubnich">Ilya Rubnich</a>.
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-52921732-3', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "Person",
+
+            "name": "Nelson Gomez",
+            "born": "1997-03-16",
+            "email": "nelson.gomez@columbia.edu",
+            "gender": "Male",
+
+            "jobTitle": "Web Development Intern",
+            "url": "http://www.ngomez.me"
+        }
+        </script>
+    </body>
+</html>
